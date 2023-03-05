@@ -4,7 +4,7 @@
   --blue-700: #0b42fb;
   --purple-700: #a600ff;
   --marina-400: #0bfbde;
-  --syne-font: Arial, Helvetica, sans-serif;
+  --syne-font: "Syne", sans-serif;
   --inter-font: "Inter", sans-serif;
 }
 
@@ -370,25 +370,26 @@ main {
   .services-grid .box-img {
     grid-column: 2 / 4;
     grid-row: 1 / 3;
-    max-width: 688px;
+    max-width: 68.8rem;
   }
 
   .services-grid .box-web {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    max-width: 510px;
+    max-width: 51rem;
   }
 
   .services-grid .box-ux-ui {
     grid-column: 1 / 2;
     grid-row: 2 / 4;
-    max-width: 400px;
+    max-width: 40rem;
   }
 
   .home-container h1 {
-    padding-top: 38px;
+    padding-top: 3.8rem;
+    margin-bottom: 3.8rem;
     font-size: 7rem;
-    line-height: 84px;
+    line-height: 8.4rem;
   }
 
   .burger {
@@ -403,20 +404,20 @@ main {
   .home-container button {
     display: block;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 4rem;
   }
 
   .home-container img {
-    margin: 50px auto 50px auto;
+    margin: 2rem auto 5rem auto;
   }
 
   .projects-container .projects-grid {
-    width: 1100px;
+    width: 110rem;
     display: grid;
     grid-template-columns: repeat(2, 530px);
     gap: 24px;
   }
   .card-box .img-mar {
-    margin-top: 40px;
+    margin-top: 4rem;
   }
 }

@@ -94,18 +94,39 @@ nav ul {
   color: var(--gray);
 }
 
-.home-container button {
+button {
   width: 17.7rem;
   height: 5.6rem;
   margin-top: 4rem;
   border-radius: 0.8rem;
   border: none;
+  font-family: var(--inter-font);
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.448rem;
   color: var(--White);
-  background: radial-gradient(
-    102.27% 102.27% at 0% 0%,
-    var(--blue-700) 0%,
-    var(--purple-700) 100%
-  );
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+}
+
+button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #05bada66;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
 }
 
 .home-container img {
@@ -141,23 +162,19 @@ nav ul {
 }
 
 .about-us-container .human {
-  margin-top: 1.6rem;
-  margin-bottom: 4rem;
+  margin-top: 1.6rem 0 4rem 0;
   font-size: 1.8rem;
   line-height: 3.2rem;
   color: var(--gray);
-}
-
-.about-us-container hr {
-  margin-bottom: 4rem;
-  border-width: 0.1rem;
-  background: rgba(255, 255, 255, 0.1);
 }
 
 .about-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.1);
+  margin-top: 4rem;
+  padding-top: 4rem;
 }
 
 .about-box-item {
@@ -295,7 +312,7 @@ nav ul {
   background-repeat: no-repeat;
 }
 
-/* projects services */
+/* section projects*/
 
 .projects-container {
   max-width: 108.8rem;
@@ -354,6 +371,116 @@ nav ul {
   margin: 1.6rem 1.6rem 3.2rem 1.6rem;
   font-size: 1.8rem;
   line-height: 3.2rem;
+}
+
+/* section testiominal*/
+
+.test-container {
+  max-width: 108.8rem;
+}
+.test-container h2 {
+  margin: 12rem 1.6rem 0 1.6rem;
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: var(--blue-700);
+}
+
+.test-container .test-p {
+  margin: 1.6rem 1.6rem 9rem 1.6rem;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 3.675rem;
+}
+
+.test-container .test-p span {
+  color: var(--purple-700);
+}
+
+.test-container .test-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.test-box img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.test-box .info {
+  background-color: #121420;
+}
+
+.test-box .info p {
+  margin: 4rem 1.6rem 2.4rem 1.6rem;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 4.4rem;
+}
+
+.info .name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 4rem 4rem 2.4rem;
+}
+
+.info h5 {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+h5 span {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--gray);
+}
+
+.line {
+  display: inline-block;
+  width: 8.8rem;
+  height: 0.8rem;
+  background-image: linear-gradient(to right, #a600ff, #000000, #121420);
+}
+
+/* section testiominal*/
+
+.clients-container {
+  max-width: 108.8rem;
+}
+.clients-container h2 {
+  text-align: center;
+  margin: 12rem 1.6rem 0 1.6rem;
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: var(--blue-700);
+}
+
+.clients-container p {
+  text-align: center;
+  margin: 1.6rem 1.6rem 6.4rem 1.6rem;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.76rem;
+}
+
+.clients-container p span {
+  color: var(--purple-700);
+}
+
+.clients-container .clients-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients-container .clients-box a {
+  margin: 0 4.1rem 1.6rem 4.1rem;
+  padding: 4.2rem 2.6rem 4.2rem 2.5rem;
 }
 
 @media only screen and (min-width: 900px) {
@@ -422,5 +549,29 @@ nav ul {
   }
   .card-box .img-mar {
     margin-top: 4rem;
+  }
+
+  .test-container .test-box {
+    flex-direction: row;
+  }
+
+  .test-container .test-box .info {
+    margin-top: 5.75rem;
+    width: 74.1rem;
+    height: 32.1rem;
+    background-color: #121420;
+  }
+
+  .test-container .test-box img {
+    width: 34.7rem;
+    height: 43.6rem;
+  }
+
+  .test-container .test-box .info p {
+    margin: 4rem 9.3rem 5.6rem 7.7rem;
+  }
+
+  .clients-container .clients-box {
+    flex-direction: row;
   }
 }

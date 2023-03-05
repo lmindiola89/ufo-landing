@@ -72,25 +72,18 @@ nav ul {
   display: none;
 }
 
-/* main */
-
-main {
-  display: grid;
-  justify-content: center;
-  padding: 0 3.2rem 0 3.2rem;
-}
-
 /* section home */
 
 .home-container {
   max-width: 108.8rem;
+  margin: 0 3.2rem 0 3.2rem;
 }
 
 .home-container h1 {
   padding-top: 8.8rem;
   font-family: var(--syne-font);
   font-weight: 800;
-  font-size: 4.8rem;
+  font-size: 4rem;
   line-height: 5.76rem;
 }
 
@@ -125,8 +118,8 @@ main {
 /* section about us */
 
 .about-us-container {
-  justify-self: center;
-  max-width: 718px;
+  max-width: 71.8rem;
+  margin: 0 3.2rem 0 3rem;
 }
 
 .about-us-container h2 {
@@ -188,7 +181,8 @@ main {
 /* section services */
 
 .services-container {
-  max-width: 1088px;
+  max-width: 108.8rem;
+  margin: 0 1.6rem 0 1.6rem;
 }
 
 .services-container .services-h2 {
@@ -319,7 +313,7 @@ main {
 
 .projects-container .projects-p {
   text-align: center;
-  margin-bottom: 7.2rem;
+  margin: 0 3.1rem 7.2rem 3.1rem;
   font-weight: 700;
   font-size: 4rem;
   line-height: 4.76rem;
@@ -343,6 +337,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 1.6rem 0 1.6rem;
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 3.36rem;
@@ -356,13 +351,21 @@ main {
 }
 
 .card-body p {
-  margin-top: 1.6rem;
-  margin-bottom: 3.2rem;
+  margin: 1.6rem 1.6rem 3.2rem 1.6rem;
   font-size: 1.8rem;
   line-height: 3.2rem;
 }
 
 @media only screen and (min-width: 900px) {
+  main {
+    display: grid;
+    justify-content: center;
+  }
+
+  .about-us-container {
+    justify-self: center;
+  }
+
   .services-grid {
     grid-template-columns: 3;
   }

@@ -15,11 +15,13 @@
 }
 
 html {
-  background-color: #24293f;
+  background-color: #121420;
   font-size: 62.5%;
   font-family: var(--inter-font);
   color: var(--White);
 }
+
+/* header */
 
 header {
   display: flex;
@@ -27,6 +29,8 @@ header {
   width: 100%;
   height: 12rem;
 }
+
+/* nav */
 
 nav {
   display: flex;
@@ -79,7 +83,7 @@ nav ul {
   margin: 0 3.2rem 0 3.2rem;
 }
 
-.home-container h1 {
+h1 {
   padding-top: 8.8rem;
   font-family: var(--syne-font);
   font-weight: 800;
@@ -136,32 +140,36 @@ button:hover {
   margin: 10rem auto 10rem auto;
 }
 
-/* section about us */
+/* section */
 
-.about-us-container {
-  max-width: 71.8rem;
-  margin: 0 3.2rem 0 3rem;
-}
-
-.about-us-container h2 {
+h2 {
   font-weight: 800;
   font-size: 1.4rem;
   line-height: 2rem;
+  letter-spacing: 0.2rem;
   color: var(--blue-700);
 }
 
-.about-us-container .based {
+/* section about us */
+
+.about-container {
+  max-width: 71.8rem;
+  margin: 0 3.2rem 14rem 3rem;
+}
+
+.based {
   margin-top: 1.6rem;
   font-weight: 700;
   font-size: 3.4rem;
   line-height: 4.76rem;
   color: var(--gray);
 }
-.about-us-container .based span {
+
+.based span {
   color: var(--White);
 }
 
-.about-us-container .human {
+.human {
   margin-top: 1.6rem 0 4rem 0;
   font-size: 1.8rem;
   line-height: 3.2rem;
@@ -199,28 +207,23 @@ button:hover {
 
 .services-container {
   max-width: 108.8rem;
-  margin: 0 1.6rem 0 1.6rem;
+  margin: 0 1.6rem 14rem 1.6rem;
 }
 
-.services-container .services-h2 {
+.services-container h2 {
   text-align: center;
-  margin-top: 7.2rem;
-  margin-bottom: 16px;
-  font-weight: 800;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: var(--blue-700);
 }
 
-.services-container .services-p {
+.services-p {
   text-align: center;
+  margin-top: 1.6rem;
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 4rem;
   line-height: 3.675rem;
 }
 
-.services-container .services-p span {
+.services-container p span {
   color: var(--purple-700);
 }
 
@@ -231,7 +234,7 @@ button:hover {
   grid-template-rows: 3;
 }
 
-.services-grid h2 {
+h3 {
   margin-bottom: 1.6rem;
   font-weight: 700;
   font-size: 2.5rem;
@@ -239,17 +242,18 @@ button:hover {
 }
 
 .services-grid p {
+  text-align: justify;
   font-size: 1.6rem;
   line-height: 3.2rem;
 }
 
 /* box img */
 
-.services-grid .box-img {
+.box-img {
   grid-row: 1 / 2;
 }
 
-.services-grid .box-img img {
+.box-img img {
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -257,7 +261,7 @@ button:hover {
 
 /* box web */
 
-.services-grid .box-web {
+.box-web {
   grid-row: 2 / 3;
   padding: 5.1rem 3.4rem;
   background: radial-gradient(
@@ -267,7 +271,7 @@ button:hover {
   );
 }
 
-.services-grid .box-web .ico-one {
+.box-web .ico-one {
   display: inline-block;
   width: 5.4rem;
   height: 5.4rem;
@@ -280,17 +284,17 @@ button:hover {
 
 /* box ux-ui */
 
-.services-grid .box-ux-ui {
+.box-ux-ui {
   grid-row: 3 / 4;
   padding: 5.1rem 3.4rem;
-  background-color: #121420;
+  background-color: #17171c;
 }
 
-.services-grid .box-ux-ui hr {
+.box-ux-ui hr {
   margin: 4.8rem 0rem 4.8rem 0rem;
 }
 
-.services-grid .box-ux-ui .ico-two {
+.box-ux-ui .ico-two {
   display: inline-block;
   width: 5.8rem;
   height: 6.4rem;
@@ -301,7 +305,7 @@ button:hover {
   background-repeat: no-repeat;
 }
 
-.services-grid .box-ux-ui .ico-three {
+.box-ux-ui .ico-three {
   display: inline-block;
   width: 5.8rem;
   height: 6.4rem;
@@ -316,27 +320,22 @@ button:hover {
 
 .projects-container {
   max-width: 108.8rem;
+  margin-bottom: 14rem;
 }
 
-.projects-container .projects-h2 {
+.projects-container h2 {
   text-align: center;
-  margin-top: 12.9rem;
-  margin-bottom: 1.6rem;
-  font-weight: 800;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: var(--blue-700);
 }
 
-.projects-container .projects-p {
+.projects-p {
   text-align: center;
-  margin: 0 3.1rem 7.2rem 3.1rem;
+  margin: 1.6rem 3.1rem 7.2rem 3.1rem;
   font-weight: 700;
   font-size: 4rem;
   line-height: 4.76rem;
 }
 
-.projects-container .projects-p span {
+.projects-p span {
   color: var(--purple-700);
 }
 
@@ -377,27 +376,21 @@ button:hover {
 
 .test-container {
   max-width: 108.8rem;
-}
-.test-container h2 {
-  margin: 12rem 1.6rem 0 1.6rem;
-  font-weight: 800;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: var(--blue-700);
+  margin-bottom: 14rem;
 }
 
-.test-container .test-p {
-  margin: 1.6rem 1.6rem 9rem 1.6rem;
+.test-p {
+  margin: 1.6rem 1.6rem 9rem 0;
   font-weight: 700;
   font-size: 4rem;
   line-height: 3.675rem;
 }
 
-.test-container .test-p span {
+.test-p span {
   color: var(--purple-700);
 }
 
-.test-container .test-box {
+.test-box {
   display: flex;
   flex-direction: column;
 }
@@ -409,7 +402,7 @@ button:hover {
 }
 
 .test-box .info {
-  background-color: #121420;
+  background-color: #17171c;
 }
 
 .test-box .info p {
@@ -445,18 +438,14 @@ h5 span {
   background-image: linear-gradient(to right, #a600ff, #000000, #121420);
 }
 
-/* section testiominal*/
+/* section clients*/
 
 .clients-container {
   max-width: 108.8rem;
 }
+
 .clients-container h2 {
   text-align: center;
-  margin: 12rem 1.6rem 0 1.6rem;
-  font-weight: 800;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: var(--blue-700);
 }
 
 .clients-container p {
@@ -471,14 +460,14 @@ h5 span {
   color: var(--purple-700);
 }
 
-.clients-container .clients-box {
+.clients-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.clients-container .clients-box a {
+.clients-box a {
   margin: 0 4.1rem 1.6rem 4.1rem;
   padding: 4.2rem 2.6rem 4.2rem 2.5rem;
 }
@@ -489,7 +478,7 @@ h5 span {
     justify-content: center;
   }
 
-  .about-us-container {
+  .about-container {
     justify-self: center;
   }
 
@@ -559,7 +548,6 @@ h5 span {
     margin-top: 5.75rem;
     width: 74.1rem;
     height: 32.1rem;
-    background-color: #121420;
   }
 
   .test-container .test-box img {
